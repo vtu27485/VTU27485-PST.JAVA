@@ -1,4 +1,5 @@
 package Week_Tasks.Week1_Tasks;
+
 import java.util.Scanner;
 
 public class Week1_Task2_ArrayElementAccess {
@@ -9,6 +10,7 @@ public class Week1_Task2_ArrayElementAccess {
         int n = sc.nextInt();
 
         int[] arr = new int[n];
+
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
@@ -22,5 +24,20 @@ public class Week1_Task2_ArrayElementAccess {
         } else {
             System.out.println("Invalid index!");
         }
+
+        sc.close();
     }
 }
+
+/*
+Sample Input:
+5
+10 20 30 40 50
+2
+
+Sample Output:
+Enter number of elements: 5
+Enter 5 elements:
+Enter index to access: 2
+Element at index 2 is: 30
+*/
