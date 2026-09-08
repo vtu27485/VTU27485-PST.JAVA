@@ -1,5 +1,7 @@
 package Week_Tasks.Week1_Tasks;
+
 import java.util.Scanner;
+
 interface DigitCondition {
     boolean check(int digit);
 }
@@ -17,7 +19,8 @@ public class Week1_Task7_SumOfDigits {
         DigitCondition isEven = digit -> digit % 2 == 0;
         DigitCondition isOdd = digit -> digit % 2 != 0;
 
-        DigitCondition condition = (choice == 'E' || choice == 'e') ? isEven : isOdd;
+        DigitCondition condition =
+                (choice == 'E' || choice == 'e') ? isEven : isOdd;
 
         long temp = Math.abs(number);
         int sum = 0;
@@ -28,13 +31,27 @@ public class Week1_Task7_SumOfDigits {
 
         while (temp > 0) {
             int digit = (int) (temp % 10);
+
             if (condition.check(digit)) {
                 sum += digit;
             }
+
             temp /= 10;
         }
 
         String kind = (condition == isEven) ? "even" : "odd";
+
         System.out.println("Sum of " + kind + " digits: " + sum);
     }
 }
+
+/*
+Sample Input:
+123456
+E
+
+Sample Output:
+Enter a number: 123456
+Sum (E)ven digits or (O)dd digits? E
+Sum of even digits: 12
+*/
