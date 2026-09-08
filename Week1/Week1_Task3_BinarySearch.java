@@ -1,5 +1,7 @@
 package Week_Tasks.Week1_Tasks;
+
 import java.util.Scanner;
+
 public class Week1_Task3_BinarySearch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -8,6 +10,7 @@ public class Week1_Task3_BinarySearch {
         int n = sc.nextInt();
 
         int[] arr = new int[n];
+
         System.out.println("Enter " + n + " sorted elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
@@ -23,6 +26,8 @@ public class Week1_Task3_BinarySearch {
         } else {
             System.out.println("Element not found.");
         }
+
+        sc.close();
     }
 
     static int binarySearch(int[] arr, int target) {
@@ -39,6 +44,20 @@ public class Week1_Task3_BinarySearch {
                 high = mid - 1;
             }
         }
+
         return -1;
     }
 }
+
+/*
+Sample Input:
+6
+10 20 30 40 50 60
+40
+
+Sample Output:
+Enter number of elements: 6
+Enter 6 sorted elements:
+Enter element to search: 40
+Element found at index: 3
+*/
