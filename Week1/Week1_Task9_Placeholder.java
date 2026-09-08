@@ -30,3 +30,12 @@ public class PalindromeNumber {
         sc.close();
     }
 }
+
+/*
+Sample Input:
+121
+
+Sample Output:
+Enter a number: 121
+121 is a Palindrome Number.
+*/
