@@ -1,4 +1,5 @@
 package Week_Tasks.Week1_Tasks;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -10,6 +11,7 @@ public class Week1_Task5_KthSmallestElement {
         int n = sc.nextInt();
 
         int[] arr = new int[n];
+
         System.out.println("Enter " + n + " elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
@@ -20,13 +22,28 @@ public class Week1_Task5_KthSmallestElement {
 
         if (k < 1 || k > n) {
             System.out.println("Invalid K!");
+            sc.close();
             return;
         }
 
-        
         int[] sorted = arr.clone();
         Arrays.sort(sorted);
 
         System.out.println("The " + k + "th smallest element is: " + sorted[k - 1]);
+
+        sc.close();
     }
 }
+
+/*
+Sample Input:
+6
+25 10 45 30 15 20
+3
+
+Sample Output:
+Enter number of elements: 6
+Enter 6 elements:
+Enter K: 3
+The 3th smallest element is: 20
+*/
