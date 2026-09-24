@@ -53,15 +53,15 @@ public class Week7_Task2_JavaInstanceofKeyword {
     }
 }
 
-//OUTPUT:
-//Input:
-//5
-//Student
-//Rockstar
-//Hacker
-//Student
-//Rockstar
-//
+/*OUTPUT:
+Input:
+5
+Student
+Rockstar
+Hacker
+Student
+Rockstar
+*/
 //Output:
 //2 2 1
 //
