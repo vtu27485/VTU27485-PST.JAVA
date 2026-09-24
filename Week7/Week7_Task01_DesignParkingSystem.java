@@ -26,10 +26,10 @@ public class Week7_Task1_DesignParkingSystem {
         System.out.println("addCar(1) -> " + ps.addCar(1));
     }
 }
-//OUTPUT:
+/*OUTPUT:
 Input: ParkingSystem(1, 1, 0)
 addCar(1) -> true
 addCar(2) -> true
 addCar(3) -> false
 addCar(1) -> false
-//
+*/
